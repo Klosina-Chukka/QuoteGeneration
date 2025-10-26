@@ -1,6 +1,5 @@
 import { Builder, By, until, WebDriver } from 'selenium-webdriver';
 import chrome from 'selenium-webdriver/chrome.js';
-import { describe, it, before, after } from 'mocha';
 
 class DailyQuotesTestSuite {
   constructor() {
