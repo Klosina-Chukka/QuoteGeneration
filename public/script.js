@@ -5,7 +5,7 @@ async function getQuote() {
     const response = await fetch("/quote");
     if (!response.ok) throw new Error("Network error");
     const data = await response.json();
-    document.getElementById("quote").innerText = `"${data[0].q}" — ${data[0].a}`;
+    document.getElementById("quote").innerText = `${data[0].q} — ${data[0].a}`;
   } catch (err) {
     document.getElementById("quote").innerText = "Failed to load quote.";
     console.error(err);
