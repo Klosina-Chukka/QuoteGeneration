@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Klosina-Chukka/QuoteGeneration.git'
+                git branch: 'main', url: 'https://github.com/Klosina-Chukka/QuoteGeneration.git'
             }
         }
 
